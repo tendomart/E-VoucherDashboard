@@ -143,6 +143,7 @@ class UserProfile extends Component {
 
 
 
+
                                 <div class="form-group row">
                                     <label class="col-lg-4 col-form-label form-control-label">Upload File :</label>
                                     {/* <div class="col-lg-9"> */}
@@ -150,9 +151,10 @@ class UserProfile extends Component {
                                     <button  type="button" class="btn btn-success btn-m"> 
                                        Upload File! 
                                     </button>
+                                    <Button bsStyle="primary" bsSize="medium" active> Upload File ! </Button>
                                     {/* </div> */}
                                 </div>
-                    <div className="clearfix" />
+                    {/* <div className="clearfix" /> */}
                   </form>
                 }
               />

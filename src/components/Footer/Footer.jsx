@@ -23,7 +23,7 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <Grid fluid>
-          <nav className="pull-left">
+          {/* <nav className="pull-left">
             <ul>
               <li>
                 <a href="#pablo">Home</a>
@@ -38,8 +38,8 @@ class Footer extends Component {
                 <a href="#pablo">Blog</a>
               </li>
             </ul>
-          </nav>
-          <p className="copyright pull-right">
+          </nav> */}
+          <p className="copyright ">
             &copy; {new Date().getFullYear()}{" "}
             <a href="https://www.mcash.ug">
               MCash - Uganda Ltd

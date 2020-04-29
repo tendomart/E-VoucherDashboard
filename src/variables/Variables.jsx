@@ -266,14 +266,14 @@ var style = {
 // // // For tables
 // //
 //
-const thArray = ["ID", "Name", "Salary", "Country", "City"];
+const thArray = ["ID", "Name", "Phone", "Relief Code", "Status","Recieved At"];
 const tdArray = [
-  ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-  ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-  ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-  ["4", "Philip Chaney", "$38,735", "Korea, South", "Overland Park"],
-  ["5", "Doris Greene", "$63,542", "Malawi", "Feldkirchen in Kärnten"],
-  ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
+  ["1", "Edith Gasana", "0755522344", "A", "PENDING","2020-04-0922 08:22"],
+  ["2", "Tendo Martyn", "0777788290", "A", "PENDING","2020-04-0922 08:22"],
+  ["3", "John Mukasa", "0787923964", "A", "RECEIVED","2020-04-0922 08:22"],
+  ["4", "Fred Mukasa", "0773040240", "A", "PENDING","2020-04-0922 08:22"],
+  ["5", "Maureen Komugisha", "0706840166", "A", "RECEIVED","2020-04-0922 08:22"],
+  ["6", "Kenneth Kwesiga", "0706840166", "A", "PENDING","2020-04-0922 08:22"]
 ];
 
 //
