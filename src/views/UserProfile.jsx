@@ -38,12 +38,12 @@ class UserProfile extends Component {
       <div className="content">
         <Grid fluid>
           <Row>
-            <Col md={8}>
+            <Col md={6}>
               <Card
-                title="Edit Profile"
+                title="Upload Beneficiary Profile"
                 content={
                   <form>
-                    <FormInputs
+                    {/* <FormInputs
                       ncols={["col-md-5", "col-md-3", "col-md-4"]}
                       properties={[
                         {
@@ -68,27 +68,23 @@ class UserProfile extends Component {
                           placeholder: "Email"
                         }
                       ]}
-                    />
+                    /> */}
                     <FormInputs
-                      ncols={["col-md-6", "col-md-6"]}
+                      ncols={["col-md-12"]}
                       properties={[
                         {
-                          label: "First name",
-                          type: "text",
+                          label: "Browse For CSV File",
+                          type: "file",
                           bsClass: "form-control",
-                          placeholder: "First name",
-                          defaultValue: "Mike"
-                        },
-                        {
-                          label: "Last name",
-                          type: "text",
-                          bsClass: "form-control",
-                          placeholder: "Last name",
-                          defaultValue: "Andrew"
-                        }
-                      ]}
+                          // placeholder: "First name",
+                         }
+                        ]}
                     />
-                    <FormInputs
+                    
+                    {/* <FormInputs
+                    ncols={["col-md-12"]}
+                    /> */}
+                    {/* <FormInputs
                       ncols={["col-md-12"]}
                       properties={[
                         {
@@ -100,8 +96,8 @@ class UserProfile extends Component {
                             "Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
                         }
                       ]}
-                    />
-                    <FormInputs
+                    /> */}
+                    {/* <FormInputs
                       ncols={["col-md-4", "col-md-4", "col-md-4"]}
                       properties={[
                         {
@@ -125,9 +121,9 @@ class UserProfile extends Component {
                           placeholder: "ZIP Code"
                         }
                       ]}
-                    />
+                    /> */}
 
-                    <Row>
+                    {/* <Row>
                       <Col md={12}>
                         <FormGroup controlId="formControlsTextarea">
                           <ControlLabel>About Me</ControlLabel>
@@ -140,16 +136,29 @@ class UserProfile extends Component {
                           />
                         </FormGroup>
                       </Col>
-                    </Row>
-                    <Button bsStyle="info" pullRight fill type="submit">
+                    </Row> */}
+                    {/* <Button bsStyle="info" pullRight fill type="submit">
                       Update Profile
-                    </Button>
+                    </Button> */}
+
+
+
+                                <div class="form-group row">
+                                    <label class="col-lg-4 col-form-label form-control-label">Upload File :</label>
+                                    {/* <div class="col-lg-9"> */}
+                                    
+                                    <button  type="button" class="btn btn-success btn-m"> 
+                                       Upload File! 
+                                    </button>
+                                    {/* </div> */}
+                                </div>
                     <div className="clearfix" />
                   </form>
                 }
               />
             </Col>
-            <Col md={4}>
+            <Col md={6}></Col>
+            {/* <Col md={4}>
               <UserCard
                 bgImage="https://ununsplash.imgix.net/photo-1431578500526-4d9613015464?fit=crop&fm=jpg&h=300&q=75&w=400"
                 avatar={avatar}
@@ -178,7 +187,7 @@ class UserProfile extends Component {
                   </div>
                 }
               />
-            </Col>
+            </Col> */}
           </Row>
         </Grid>
       </div>

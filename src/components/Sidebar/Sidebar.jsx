@@ -20,7 +20,7 @@ import { NavLink } from "react-router-dom";
 
 import AdminNavbarLinks from "../Navbars/AdminNavbarLinks.jsx";
 
-import logo from "assets/img/reactlogo.png";
+import logo from "assets/img/Mcashlogo.png";
 
 class Sidebar extends Component {
   constructor(props) {
@@ -58,7 +58,7 @@ class Sidebar extends Component {
         <div className="logo">
           <a
             href="https://www.creative-tim.com?ref=lbd-sidebar"
-            className="simple-text logo-mini"
+            className="simple-text logo-normal"
           >
             <div className="logo-img">
               <img src={logo} alt="logo_image" />
@@ -68,7 +68,7 @@ class Sidebar extends Component {
             href="https://www.creative-tim.com?ref=lbd-sidebar"
             className="simple-text logo-normal"
           >
-            Creative Tim
+            MCash E-Voucher
           </a>
         </div>
         <div className="sidebar-wrapper">
