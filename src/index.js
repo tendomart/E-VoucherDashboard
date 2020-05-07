@@ -80,8 +80,8 @@ ReactDOM.render(
   <BrowserRouter>
   
     <Switch> 
-       {/* <Route path="/admin" render={props => <AdminLayout {...props} />} />
-      <Redirect from="/" to="/admin/dashboard" />  */}
+       <Route path="/admin" render={props => <AdminLayout {...props} />} />
+      <Redirect from="/" to="/admin/dashboard" /> 
       {/* <Route path="/login" render={props => <AdminLayout {...props} />} />
        <Redirect from="/" to="/login/home" /> 
        <Login></Login> */}
