@@ -23,7 +23,7 @@ import Icons from "views/Icons.jsx";
 import Maps from "views/Maps.jsx";
 import Notifications from "views/Notifications.jsx";
 import Upgrade from "views/Upgrade.jsx";
-
+import Login from "users/Login.jsx";
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -46,6 +46,14 @@ const dashboardRoutes = [
     component: TableList,
     layout: "/admin"
   }
+  // ,
+  // {
+  //   path: "/home",
+  //   name: "Login ",
+  //   component: Login,
+  //   layout: "/login"
+  // }
+
   // ,
   // {
   //   path: "/typography",

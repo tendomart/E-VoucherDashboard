@@ -17,17 +17,35 @@
 */
 import React, { Component } from "react";
 import { Navbar } from "react-bootstrap";
+import { getUser, removeUserSession } from 'utils/Common';
 
 import AdminNavbarLinks from "./AdminNavbarLinks.jsx";
 
+  
+  // handle click event of logout button
+//   const handleLogout = () => {
+//     removeUserSession();
+//     props.history.push('/login');
+//   }
+// //get User
+//   const user = getUser();
 class Header extends Component {
+  // function Header(props) {
   constructor(props) {
     super(props);
     this.mobileSidebarToggle = this.mobileSidebarToggle.bind(this);
     this.state = {
       sidebarExists: false
     };
+  // handle click event of logout button
+    this.handleLogout = () => {
+      removeUserSession();
+      props.history.push('/login');
+    }
+//get User
+   this.user = getUser();
   }
+  
   mobileSidebarToggle(e) {
     if (this.state.sidebarExists === false) {
       this.setState({
@@ -44,6 +62,8 @@ class Header extends Component {
     };
     document.body.appendChild(node);
   }
+
+ 
   render() {
     return (
       <Navbar fluid>
