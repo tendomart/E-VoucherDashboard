@@ -27,6 +27,8 @@ import "./assets/sass/light-bootstrap-dashboard-react.scss?v=1.3.0";
 import "./assets/css/demo.css";
 import "./assets/css/pe-icon-7-stroke.css";
 import Login from "./users/Login";
+import Signin from "./users/Signin";
+// import LoginForm from "./users/LoginForm";
 import AdminLayout from "layouts/Admin.jsx";
 import PrivateRoute from './utils/PrivateRoute';
 import PublicRoute from './utils/PublicRoute';
@@ -38,6 +40,9 @@ import { setUserSession } from 'utils/Common';
 import { removeUserSession } from 'utils/Common';
 
 
+import Counter from './users/Counter'
+
+// import  authProvider from './users/authProvider'
 
 
 // export function index() {
@@ -86,12 +91,16 @@ ReactDOM.render(
        <Redirect from="/" to="/login/home" /> 
        <Login></Login> */}
       {/* <Route exact path="/" component={Home} /> */}
-      <PublicRoute path="/login" component={Login} />
+      {/* <PublicRoute path="/admin/dashboard" component={Dashboard} /> */}
       {/* <PrivateRoute path="/admin/dashboard" component={Dashboard} /> */}
        
     </Switch>
     {/* <Login></Login> */}
+    {/* <LoginForm></LoginForm> */}
   </BrowserRouter>
+  {/* <Counter></Counter> */}
+
+  <Signin></Signin>
   </div>,
   document.getElementById("root")
 );
