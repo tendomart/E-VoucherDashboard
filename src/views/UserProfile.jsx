@@ -33,7 +33,13 @@ import Button from "components/CustomButton/CustomButton.jsx";
 import avatar from "assets/img/faces/face-3.jpg";
 
 class UserProfile extends Component {
-   validateFile=()=>{
+  //constructor
+  constructor(props) {
+    super(props);
+    this.state = { upload: '' };
+  }
+   validateFile=(event)=>{
+    this.setState({upload: event.target.value});
      console.log('Validating File Type ...');
 let fileInput = document.getElementById('upload'); 
 let filePath = fileInput.value;
@@ -107,8 +113,8 @@ else
                       
                         }
                         ]}
-                        id="upload"
-                        onClick={ this.validateFile}
+                        name="upload"
+                        onChange={ this.validateFile}
                     />
                     
                     {/* <FormInputs
@@ -172,7 +178,7 @@ else
                     </Button> */}
 
 
-
+<Row>
 
                                 <div class="form-group row">
                                     <label class="col-lg-4 col-form-label form-control-label">Upload File :</label>
@@ -181,9 +187,10 @@ else
                                     <button  type="button" class="btn btn-success btn-m"  > 
                                        Upload File! 
                                     </button>
-                                    <Button bsStyle="primary" bsSize="medium"  active> Upload File ! </Button>
+                                    {/* <Button bsStyle="primary" bsSize="medium"  active> Upload File ! </Button> */}
                                     {/* </div> */}
                                 </div>
+                                </Row>
                     {/* <div className="clearfix" /> */}
                   </form>
                 }
