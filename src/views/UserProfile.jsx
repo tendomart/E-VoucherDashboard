@@ -33,6 +33,34 @@ import Button from "components/CustomButton/CustomButton.jsx";
 import avatar from "assets/img/faces/face-3.jpg";
 
 class UserProfile extends Component {
+   validateFile=()=>{
+     console.log('Validating File Type ...');
+let fileInput = document.getElementById('upload'); 
+let filePath = fileInput.value;
+let acceptedFormat = /(\.csv)$/i;
+// check extension
+if(!acceptedFormat.exec(filePath)){
+  alert('Invalid file type , It Should be a CSV File');
+  filePath.value='';
+  return false;
+}
+else  
+            { 
+              
+                // Image preview 
+                if (fileInput.files && fileInput.files[0]) { 
+                    var reader = new FileReader(); 
+                    reader.onload = function(e) { 
+                        document.getElementById( 
+                            'imagePreview').innerHTML =  
+                            '<img src="' + e.target.result 
+                            + '"/>'; 
+                    }; 
+                      
+                    reader.readAsDataURL(fileInput.files[0]); 
+                } 
+            } 
+  }
   render() {
     return (
       <div className="content">
@@ -76,9 +104,11 @@ class UserProfile extends Component {
                           label: "Browse For CSV File",
                           type: "file",
                           bsClass: "form-control",
-                          // placeholder: "First name",
-                         }
+                      
+                        }
                         ]}
+                        id="upload"
+                        onClick={ this.validateFile}
                     />
                     
                     {/* <FormInputs
@@ -148,10 +178,10 @@ class UserProfile extends Component {
                                     <label class="col-lg-4 col-form-label form-control-label">Upload File :</label>
                                     {/* <div class="col-lg-9"> */}
                                     
-                                    <button  type="button" class="btn btn-success btn-m"> 
+                                    <button  type="button" class="btn btn-success btn-m"  > 
                                        Upload File! 
                                     </button>
-                                    <Button bsStyle="primary" bsSize="medium" active> Upload File ! </Button>
+                                    <Button bsStyle="primary" bsSize="medium"  active> Upload File ! </Button>
                                     {/* </div> */}
                                 </div>
                     {/* <div className="clearfix" /> */}

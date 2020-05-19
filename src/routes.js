@@ -24,6 +24,7 @@ import Maps from "views/Maps.jsx";
 import Notifications from "views/Notifications.jsx";
 import Upgrade from "views/Upgrade.jsx";
 import Login from "users/Login.jsx";
+import RegisterMerchant from "views/RegisterMerchant"
 const dashboardRoutes = [
   {
     path: "/dashboard",
@@ -45,7 +46,14 @@ const dashboardRoutes = [
     icon: "pe-7s-note2",
     component: TableList,
     layout: "/admin"
-  }
+  },
+  {
+      path: "/register",
+      name: "Register A Merchant ",
+      icon: "pe-7s-notebook",
+      component: RegisterMerchant,
+      layout: "/admin"
+    }
   // ,
   // {
   //   path: "/home",
