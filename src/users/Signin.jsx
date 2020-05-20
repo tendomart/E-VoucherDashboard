@@ -1,6 +1,6 @@
 import React , { useState } from 'react'
 import  authProvider from '././authProvider'
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { Redirect } from 'react-router';
 
 function Signin() {
@@ -8,12 +8,12 @@ function Signin() {
 //capture values using state
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
-    let history = useHistory(); 
+    // let history = useHistory(); 
 //Handle Submit
 
-function redirect() {
-  history.push("/admin/dashboard");
-  }
+// function redirect() {
+//   history.push("/admin/dashboard");
+//   }
     function handleSubmit(event) {
       
         event.preventDefault();
@@ -66,7 +66,7 @@ function redirect() {
       console.log(`Hey am Status ${res.status }`);
       // console.log(`Hey am User ${ this.onSubmit() }`);
     //   history.push('/admin/dashboard');
-      redirect() ;
+      // redirect() ;
     //   return window.location = '/admin/dashboard';
 //    <Redirect from="/" to="/admin/dashboard" /> 
 
